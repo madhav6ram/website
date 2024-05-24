@@ -11,18 +11,6 @@ body {
     min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
-.container {
-    background: #78A083; /* Semi-transparent background for content boxes */
-    padding: 15px;
-    margin: 1rem;
-    border-radius: 10px;
-    width: 40%;
-    border: 2px solid #000000; /* Optional: Adds a border to the header box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    word-wrap: break-word;
-    flex-grow: 1; /* Allow container to grow and fill remaining space */
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -50,11 +38,20 @@ nav ul li {
     margin: 1px;
 }
 
-main {
+/* main */
+.container {
+    background: #78A083; /* Semi-transparent background for content boxes */
+    padding: 15px;
+    margin: 1rem;
+    border-radius: 10px;
     min-width: 300px;
     width: 40%;
-    margin-top: 1rem;
+    border: 2px solid #000000; /* Optional: Adds a border to the header box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    word-wrap: break-word;
+    flex-grow: 1; /* Allow container to grow and fill remaining space */
 }
+
 
 footer {
     min-width: 300px;
@@ -68,15 +65,6 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
     margin-top: auto; /* Push footer to the bottom */
 }
-
-/* .footer-line {
-    margin-top: auto;
-    min-width: 300px;
-    width: 40%;
-    border-top: 2px solid rgb(41, 41, 41);
-    margin: 2rem 0 1rem 0;
-} 
-*/
 
 .project, article {
     margin-bottom: 2rem;
@@ -94,3 +82,12 @@ h1 {
 p, h2, h3, h4, h5, h6 {
     color: #000000;
 }
+
+/* .footer-line {
+    margin-top: auto;
+    min-width: 300px;
+    width: 40%;
+    border-top: 2px solid rgb(41, 41, 41);
+    margin: 2rem 0 1rem 0;
+} 
+*/
